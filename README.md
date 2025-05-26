@@ -1,109 +1,87 @@
 
-## 📊 **Riyadh Public Transport Analysis – Summary Report**
 
-**Project Title:**
-*Analyzing Public Transit Infrastructure & Passenger Feedback in Riyadh*
+## 🚌🚇 Riyadh Public Transport Dashboard – Project Summary
 
-**Created By:** Noor Alomari
-📧 [noor.omar080@gmail.com](mailto:noor.omar080@gmail.com) | 📞 +962 797 476 293
+This project explores and visualizes key insights from **Riyadh’s public transportation system**, focusing on both **metro stations** and **bus stop infrastructure**. The goal is to identify patterns in **user satisfaction**, **infrastructure types**, and **development progress** using interactive visuals and clean data modeling in **Power BI**.
 
 ---
 
-### 🎯 **Project Objective**
+### 📍 Metro Stations – Satisfaction & Structure
 
-To transform raw spatial and attribute data of Riyadh’s public transportation system into clear, actionable insights through a Power BI dashboard. The focus was on understanding:
+The first part of the dashboard analyzes **passenger feedback on metro stations** across the city.
+We collected **2,451 responses** linked to **201 metro stations**, and analyzed them across two main dimensions:
 
-* Passenger satisfaction trends.
-* Infrastructure types (metro & bus).
-* Development progress and accessibility.
+* **Satisfaction Category**
+* **Station Type**
 
----
+#### 🔑 Key Insights:
 
-### 📁 **Tools & Data**
+* Average satisfaction score: **4.6 / 5.0**
+* Most users were:
 
-* **Tools Used:** Power BI, Excel
-* **Data Sources:** JSON & attribute tables for metro stations and bus stop infrastructure
+  * **Very Satisfied** → 70%
+  * **Satisfied** → 22%
+  * Only a small percentage were **Neutral** (4.5%) or **Poor** (3.5%)
 
----
- Metro Stations – Satisfaction & Structure Analysis**
+#### 🏗️ Station Structure:
 
-✅ **What Was Done:**
+* **Elevated stations** were the most common: **83%**
+* **Deep underground**: 11%
+* **Shallow underground**: 5%
+* **At-grade stations** were the least common: 1%
 
-* Cleaned and standardized 201 metro stations across 6 lines.
-* Merged station attributes with 2,451 passenger feedback entries.
-* Categorized stations by type (Elevated, Deep Underground, Shallow Underground, At Grade).
-* Visualized satisfaction using KPIs, pie charts, and maps.
+alot of  slicers to  allow users to filter by:
 
- 🔍 **Key Insights:**
-
-* **Overall Satisfaction:** 4.6 / 5.0
-* **Most Common Feedback:**
-
-  * ⭐ Very Satisfied: **73.6%**
-  * 👍 Satisfied: **18.4%**
-* **Station Types:**
-
-  * Elevated stations dominate: **83%**
-  * Deep Underground: **11%**
-* **Best-rated type:** Shallow Underground (4.8/5), despite being only 5% of stations.
-* **At Grade stations** received the lowest rating: **3.9 / 5.0**
+* **Station Type**
+* **Satisfaction Category**
+*  Metro Line number
+*  Sheter Type 
 
 ---
 
- Bus Stops – Type, Progress & Route Coverage**
+### 🚌 Bus Stop Infrastructure – Type, Progress, and Routes
 
-### ✅ **What Was Done:**
+The second part focuses on the infrastructure of **bus stops** in Riyadh:
 
-* Analyzed 3,010 bus stops across 89 routes.
-* Classified by shelter type, development stage, and directional coverage.
-* Integrated slicers for dynamic filtering by structure and progress.
+* **3,010 bus stops** analyzed across **89 bus lines**
+* Average: **33.82 stops per line**
 
-### 🔍 **Key Insights:**
+#### 🏗️ Bus Stop Type:
 
-* **Most Common Structure:**
+* **Feeder poles (reduced site adaptation)** were most common: 61.3%
+* **Air-conditioned shelters**: 22.5%
+* Other types include open shelters, BRT stations, and rare structures like terminals and iconic stations
 
-  * Feeder pole (reduced adaptation): **61.3%**
-  * Air-conditioned shelters: **22.5%**
-* **Development Progress:**
+#### 🔄 Development Progress:
 
-  * Only **28.2%** reached "beyond Stage 5".
-  * **1.1%** are still in planning – major opportunity area.
-* **Directional Spread:**
+* Most stops are in advanced stages:
 
-  * Direction 1 (outbound): **78%**
-  * Direction 2 (return): **21%**
-* **Opportunity:** Optimize infrastructure balance across directions and complete pending shelter developments.
+  * **Beyond Stage 5**: 28.2%
+  * **Stage 1 & 2**: \~39% combined
+* Only **1.1%** are still in planning
 
----
-Metro Line Distribution – Number of Stations**
+#### ➡️ Route Direction:
 
-### ✅ **What Was Done:**
+* **Direction 1** (main routes): 78.2%
+* **Direction 2**: 20.7%
 
-* Mapped and counted stations per metro line using cleaned coordinates.
-* Filtered to show 6 lines with respective shares of total stations.
+Two slicers allow dynamic filtering by:
 
-### 🔍 **Key Insights:**
-
-* **Line 1** has the highest share: **33.05%** of total stations.
-* **Line 5** has the lowest presence: **3.1%**
-* **Potential Issue:** One line might have fewer stations in data, possibly under construction or incomplete records.
+* **Bus Stop Type**
+* **Development Stage**
 
 ---
 
-### 📌 **Suggested Actions / Future Extensions**
+### 🧰 Tools Used:
 
-* Cross-validate missing or low-frequency station records (e.g. Metro Line 5).
-* Correlate satisfaction data with **location**, **station type**, and **line** to prioritize improvements.
-* Add temporal filters if timestamped data becomes available to study satisfaction over time.
+* **Power BI** (Data modeling, visuals)
+* **Excel** (Initial cleaning & transformation)
+* **Data Sources:** JSON files and attribute tables from Riyadh’s official transport dataset
 
 ---
 
-### 🔗 **Final Notes**
+### 📌 Project Goals:
 
-This dashboard helps transport authorities and city planners:
-
-* Spot infrastructure imbalances.
-* Understand rider preferences.
-* Prioritize enhancements to stations and shelters.
-
-
+* Translate raw transportation data into actionable insights
+* Highlight satisfaction patterns and infrastructure readiness
+* Provide a decision-support tool for urban planners and stakeholders
